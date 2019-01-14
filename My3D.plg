@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: My3D - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/My3D.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"Z:\RamDisk\Github\PC\My3D\My3DDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP57.tmp" 
+Creating temporary file "C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP58.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/My3D.pdb" /machine:I386 /out:"Release/My3D.exe" 
+.\Release\AutoBase.obj
+.\Release\Common.obj
+.\Release\Cond1.obj
+.\Release\Cond2.obj
+.\Release\Cond3.obj
+.\Release\Cond4.obj
+.\Release\Cond5.obj
+.\Release\Cond6.obj
+.\Release\DataAnalyse.obj
+.\Release\DataChart.obj
+.\Release\DataDistribute.obj
+.\Release\DataInput.obj
+.\Release\DonateInfo.obj
+.\Release\History.obj
+.\Release\Intersection.obj
+.\Release\My3D.obj
+.\Release\My3DDlg.obj
+.\Release\Number.obj
+.\Release\PageG1.obj
+.\Release\PageG3.obj
+.\Release\PageG6.obj
+.\Release\PageSelNum.obj
+.\Release\PageUseBase.obj
+.\Release\SaveOption.obj
+.\Release\Stat1.obj
+.\Release\Stat2.obj
+.\Release\Stat3.obj
+.\Release\Stat4.obj
+.\Release\Stat5.obj
+.\Release\Stat6.obj
+.\Release\StdAfx.obj
+.\Release\WinHistory.obj
+.\Release\EMFC.obj
+.\Release\HyperLink.obj
+.\Release\IniFile.obj
+.\Release\ListCtrlEx.obj
+.\Release\MyDT.obj
+.\Release\SortListCtrl.obj
+.\Release\TabSheet.obj
+.\Release\TXT.obj
+.\Release\wnd.obj
+.\Release\My3D.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP58.tmp"
+<h3>Output Window</h3>
+Compiling...
+My3DDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+My3D.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

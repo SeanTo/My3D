@@ -1,0 +1,1759 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\My3D.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\My3D.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 256, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 My3D"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,9,10,20,20
+    LTEXT           "醉排三",IDC_STATIC_NAME,40,10,133,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007   醉书生",IDC_STATIC,39,24,134,8
+    DEFPUSHBUTTON   "确定",IDOK,202,6,50,14,WS_GROUP
+    PUSHBUTTON      "致谢>>",IDC_THANK,5,125,50,14
+    LTEXT           "主页",IDC_STATIC_HOME,25,104,44,8
+    LTEXT           "名字一",IDC_STATIC_NAME1,29,152,70,8
+    LTEXT           "链接一",IDC_STATIC_URL1,117,152,103,8
+    LTEXT           "名字二",IDC_STATIC_NAME2,29,164,70,8
+    LTEXT           "链接二",IDC_STATIC_URL2,117,164,103,8
+    LTEXT           "名字三",IDC_STATIC_NAME3,29,176,70,8
+    LTEXT           "链接三",IDC_STATIC_URL3,117,176,103,8
+    LTEXT           "名字五",IDC_STATIC_NAME5,29,200,70,8
+    LTEXT           "链接五",IDC_STATIC_URL5,117,200,103,8
+    LTEXT           "名字六",IDC_STATIC_NAME6,29,212,70,8
+    LTEXT           "链接六",IDC_STATIC_URL6,117,212,103,8
+    GROUPBOX        "",IDC_STATIC,7,143,245,94
+    LTEXT           "论坛",IDC_STATIC_MAIL,109,104,117,8
+    LTEXT           "名字四",IDC_STATIC_NAME4,29,188,70,8
+    LTEXT           "链接四",IDC_STATIC_URL4,117,188,103,8
+    LTEXT           "　　特别感谢网友[国货至上]提供彩票分析方法、软件命名以及对软件测试的支持。",
+                    IDC_STATIC,88,123,160,19
+    LTEXT           "名字七",IDC_STATIC_NAME7,29,223,70,8
+    LTEXT           "链接七",IDC_STATIC_URL7,117,223,103,8
+    PUSHBUTTON      "捐助信息",IDC_BUTTON_DONATE,202,23,50,14
+    LTEXT           "    本软件可免费使用！",IDC_STATIC,10,44,242,42
+    LTEXT           "感谢使用本软件，祝您中奖！  友情提示：请理性购彩！",
+                    IDC_STATIC,26,90,207,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,6,116,245,1
+END
+
+IDD_My3D_DIALOG DIALOGEX 0, 0, 487, 338
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "排三书生"
+CLASS "My3DClassName"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "过滤",IDOK,387,261,40,14
+    CONTROL         "体彩排列三",IDC_RADIO_P3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,17,41,56,10
+    CONTROL         "福彩 3D",IDC_RADIO_3D,"Button",BS_AUTORADIOBUTTON,94,41,
+                    44,10
+    CONTROL         "Tab1",IDC_TAB_COND,"SysTabControl32",0x0,177,39,185,242
+    CONTROL         "Tab1",IDC_TAB_RESULT,"SysTabControl32",TCS_RIGHT | 
+                    TCS_VERTICAL,383,52,96,183
+    PUSHBUTTON      "单转组",IDC_SINGLE_TO_GROUP,435,261,40,14
+    PUSHBUTTON      "组转单",IDC_GROUP_TO_SINGLE,435,277,40,14
+    PUSHBUTTON      "保存...",IDC_SAVE_FILE,435,317,40,14
+    PUSHBUTTON      "加到大底",IDC_SENT_TO_BASE,435,294,40,14
+    PUSHBUTTON      "战绩",IDC_ANALYSE_RESULT,387,317,40,14
+    PUSHBUTTON      "差集",IDC_EXCLUDE_BASE,387,294,40,14
+    PUSHBUTTON      "交集",IDC_INTER_BASE,387,277,40,14
+    PUSHBUTTON      "复位",IDC_COND_RESET,274,315,28,14
+    PUSHBUTTON      "读取",IDC_COND_READ,244,315,28,14
+    PUSHBUTTON      "保存",IDC_COND_SAVE,177,315,20,14
+    PUSHBUTTON      "历史记录",IDC_DATA_INPUT,1,0,38,19
+    PUSHBUTTON      "数据分析",IDC_DATA_ANALYSE,115,0,38,19
+    PUSHBUTTON      "号码分布",IDC_DISTRIBUTE,39,0,38,19
+    PUSHBUTTON      "走势图",IDC_ANALYSE_TREND,77,0,38,19
+    PUSHBUTTON      "倍投计划",IDC_MUTI_CALC,333,0,38,19
+    PUSHBUTTON      "帮助",IDHELP,407,0,26,19
+    PUSHBUTTON      "退出",IDCANCEL,459,0,26,19
+    CONTROL         "Tab1",IDC_TAB_NUM_BASE,"SysTabControl32",WS_GROUP,8,72,
+                    149,184
+    GROUPBOX        "彩票类型",IDC_STATIC,4,29,157,28,WS_DISABLED
+    LTEXT           "组六形态",IDC_STATIC,16,281,33,8
+    LTEXT           "组三形态",IDC_STATIC,16,294,33,8
+    LTEXT           "豹子形态",IDC_STATIC,16,307,33,8
+    EDITTEXT        IDC_EDIT_TIP1,56,279,97,12,ES_READONLY
+    GROUPBOX        "本次操作结果概要",IDC_STATIC,4,267,157,67,WS_DISABLED
+    LTEXT           "全部注数",IDC_STATIC,16,320,33,8
+    EDITTEXT        IDC_EDIT_TIP2,56,292,97,12,ES_READONLY
+    EDITTEXT        IDC_EDIT_TIP3,56,305,97,12,ES_READONLY
+    EDITTEXT        IDC_EDIT_TIP4,56,318,97,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "投注方法",IDC_STATIC,4,62,157,197,WS_DISABLED
+    GROUPBOX        "过滤条件",IDC_STATIC,173,29,194,255,WS_DISABLED
+    GROUPBOX        "过滤结果",IDC_STATIC,379,29,105,305,WS_DISABLED
+    PUSHBUTTON      "关于",IDC_BTN_ABOUT,433,0,26,19
+    PUSHBUTTON      "更新",IDC_CHECK_UPDATE,371,0,26,19
+    PUSHBUTTON      "手动再删",IDC_BTN_HAND_DEL,438,37,40,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,2,21,482,1
+    CONTROL         "导入",IDC_CHK_SAVEAS_OPEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,215,317,27,10
+    GROUPBOX        "",IDC_STATIC,431,239,48,73,WS_DISABLED
+    LTEXT           "全局容错",IDC_STATIC,305,296,32,8
+    LTEXT           "导出",IDC_STATIC,198,318,16,8
+    CONTROL         "二次大底",IDC_CHK_REPLACE_BASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,385,246,43,10
+    LTEXT           "战绩统计",IDC_STATIC,179,296,32,8
+    EDITTEXT        IDC_EDIT_ANALYSE_PERIODS,213,294,20,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,173,285,194,49
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,174,310,194,1
+    PUSHBUTTON      "工具1",IDC_BTN_TEST,295,0,38,19,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "期",IDC_STATIC,235,296,8,8
+    COMBOBOX        IDC_CMB_ALLOW_ERROR,339,293,24,109,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "工具2",IDC_BTN_TEST2,257,0,38,19,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "页面容错",IDC_STATIC,305,318,32,8
+    COMBOBOX        IDC_CMB_ALLOW_ERROR2,339,315,24,132,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    PUSHBUTTON      "文件交集",IDC_INTER_FILE,191,0,38,19
+    CONTROL         "联合形态",IDC_CHK_UNITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,433,246,43,10
+    PUSHBUTTON      "自动荐底",IDC_AUTO_BASE,153,0,38,19
+    GROUPBOX        "",IDC_STATIC,383,239,48,73,WS_DISABLED
+END
+
+IDD_DIALOG_NUMBER DIALOG DISCARDABLE  0, 0, 146, 167
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "0",IDC_CHECK_B10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,7,16,10
+    CONTROL         "1",IDC_CHECK_B11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,7,16,10
+    CONTROL         "2",IDC_CHECK_B12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,7,16,10
+    CONTROL         "3",IDC_CHECK_B13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,7,16,10
+    CONTROL         "4",IDC_CHECK_B14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,7,16,10
+    CONTROL         "5",IDC_CHECK_B15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,21,16,10
+    CONTROL         "6",IDC_CHECK_B16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,21,16,10
+    CONTROL         "7",IDC_CHECK_B17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,21,16,10
+    CONTROL         "8",IDC_CHECK_B18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,21,16,10
+    CONTROL         "9",IDC_CHECK_B19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,21,16,10
+    CONTROL         "0",IDC_CHECK_B20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,64,16,10
+    CONTROL         "1",IDC_CHECK_B21,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,64,16,10
+    CONTROL         "2",IDC_CHECK_B22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,64,16,10
+    CONTROL         "3",IDC_CHECK_B23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,64,16,10
+    CONTROL         "4",IDC_CHECK_B24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,64,16,10
+    CONTROL         "5",IDC_CHECK_B25,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,79,16,10
+    CONTROL         "6",IDC_CHECK_B26,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,79,16,10
+    CONTROL         "7",IDC_CHECK_B27,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,79,16,10
+    CONTROL         "8",IDC_CHECK_B28,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,79,16,10
+    CONTROL         "9",IDC_CHECK_B29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,79,16,10
+    CONTROL         "0",IDC_CHECK_B30,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,119,16,10
+    CONTROL         "1",IDC_CHECK_B31,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,119,16,10
+    CONTROL         "2",IDC_CHECK_B32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,119,16,10
+    CONTROL         "3",IDC_CHECK_B33,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,119,16,10
+    CONTROL         "4",IDC_CHECK_B34,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,119,16,10
+    CONTROL         "5",IDC_CHECK_B35,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    26,134,16,10
+    CONTROL         "6",IDC_CHECK_B36,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    50,134,16,10
+    CONTROL         "7",IDC_CHECK_B37,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    74,134,16,10
+    CONTROL         "8",IDC_CHECK_B38,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    98,134,16,10
+    CONTROL         "9",IDC_CHECK_B39,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    122,134,16,10
+    PUSHBUTTON      "全清",IDC_CLS_ALL1,26,31,22,13
+    PUSHBUTTON      "全清",IDC_CLS_ALL2,26,91,22,13
+    PUSHBUTTON      "全清",IDC_CLS_ALL3,26,147,22,13
+    PUSHBUTTON      "反选",IDC_REVERSE1,49,31,22,13
+    PUSHBUTTON      "反选",IDC_REVERSE2,49,91,22,13
+    PUSHBUTTON      "反选",IDC_REVERSE3,49,147,22,13
+    PUSHBUTTON      "推荐",IDC_RECOMMEND1,115,31,22,13
+    PUSHBUTTON      "推荐",IDC_RECOMMEND2,115,91,22,13
+    PUSHBUTTON      "推荐",IDC_RECOMMEND3,115,147,22,13
+    CTEXT           "百位数",IDC_STATIC,7,8,11,27
+    CTEXT           "十位数",IDC_STATIC,7,65,11,27
+    CTEXT           "个位数",IDC_STATIC,7,121,11,27
+END
+
+IDD_DIALOG_BASE DIALOGEX 0, 0, 148, 168
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BASE,0,1,95,144,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL,WS_EX_ACCEPTFILES | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "清理大底",IDC_DEL_BASE,2,154,35,13
+    COMBOBOX        IDC_CMB_BASE,95,1,51,153,CBS_SIMPLE | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "自定义",IDC_BASE_EDIT,120,154,26,13
+    PUSHBUTTON      "刷新",IDC_BASE_REFRESH,95,154,25,13
+    PUSHBUTTON      "导入文件",IDC_LOAD_BASEFILE,37,154,35,13
+END
+
+IDD_DIALOG_G6 DIALOGEX 0, 0, 76, 180
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_G6,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    WS_TABSTOP,1,0,74,180,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_G3 DIALOGEX 0, 0, 76, 180
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_G3,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    WS_TABSTOP,1,0,74,180,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_G1 DIALOGEX 0, 0, 76, 181
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_G1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    WS_TABSTOP,1,0,74,180,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_SAVE DIALOG DISCARDABLE  0, 0, 210, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存选项"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "1 注",IDC_RADIO_L01,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,82,23,32,10
+    CONTROL         "10注",IDC_RADIO_L05,"Button",BS_AUTORADIOBUTTON,82,41,
+                    32,10
+    CONTROL         "20注",IDC_RADIO_L10,"Button",BS_AUTORADIOBUTTON,82,59,
+                    32,10
+    CONTROL         "组六形态",IDC_CHECK_SG6,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,16,23,48,10
+    CONTROL         "组三形态",IDC_CHECK_SG3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,41,48,10
+    CONTROL         "豹子形态",IDC_CHECK_SG1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,59,48,10
+    DEFPUSHBUTTON   "保存",IDOK,144,83,50,14
+    PUSHBUTTON      "取消",IDCANCEL,144,101,50,14
+    GROUPBOX        "保存范围",IDC_STATIC,6,8,66,66
+    GROUPBOX        "每行注数",IDC_STATIC,76,8,46,66
+    CONTROL         "不同形态间",IDC_CHECK_SEPARATOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,131,19,56,10
+    LTEXT           "用空行隔开",IDC_STATIC,143,30,41,8
+    CONTROL         "添加行序",IDC_CHECK_LINENUM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,39,48,10
+    LTEXT           "自定大底格式",IDC_STATIC,142,50,49,8
+    GROUPBOX        "其它选项",IDC_STATIC,125,8,80,66
+    CONTROL         "文件名组选后缀",IDC_CHECK_SUFFIX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,131,59,72,10
+    CONTROL         "保存并打开文件",IDC_SAVE_AND_OPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,86,67,10
+    CONTROL         "导出条件描述",IDC_EXPORT_COND_NOTE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,100,60,10
+END
+
+IDD_COND1 DIALOG DISCARDABLE  0, 0, 181, 253
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "奇码数",IDC_CHECK_C101,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,3,40,10
+    EDITTEXT        IDC_EDIT_C101,46,2,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_011,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,4,19,10
+    CONTROL         "杀",IDC_C1_RAD_012,"Button",BS_AUTORADIOBUTTON,131,4,19,
+                    10
+    PUSHBUTTON      "参考",IDC_BUTTON_C101,155,2,24,12
+    CONTROL         "偶码数",IDC_CHECK_C102,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,16,40,10
+    EDITTEXT        IDC_EDIT_C102,46,15,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_021,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,17,19,10
+    CONTROL         "杀",IDC_C1_RAD_022,"Button",BS_AUTORADIOBUTTON,131,17,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C102,155,15,24,12
+    CONTROL         "小码数",IDC_CHECK_C103,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,29,40,10
+    EDITTEXT        IDC_EDIT_C103,46,28,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_031,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,30,19,10
+    CONTROL         "杀",IDC_C1_RAD_032,"Button",BS_AUTORADIOBUTTON,131,30,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C103,155,28,24,12
+    CONTROL         "大码数",IDC_CHECK_C104,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,42,40,10
+    EDITTEXT        IDC_EDIT_C104,46,41,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_041,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,43,19,10
+    CONTROL         "杀",IDC_C1_RAD_042,"Button",BS_AUTORADIOBUTTON,131,43,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C104,155,41,24,12
+    CONTROL         "质号数",IDC_CHECK_C105,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,55,40,10
+    EDITTEXT        IDC_EDIT_C105,46,54,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_051,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,56,19,10
+    CONTROL         "杀",IDC_C1_RAD_052,"Button",BS_AUTORADIOBUTTON,131,56,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C105,155,54,24,12
+    CONTROL         "新码数",IDC_CHECK_C106,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,68,40,10
+    EDITTEXT        IDC_EDIT_C106,46,67,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_061,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,69,19,10
+    CONTROL         "杀",IDC_C1_RAD_062,"Button",BS_AUTORADIOBUTTON,131,69,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C106,155,67,24,12
+    CONTROL         "孤码数",IDC_CHECK_C107,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,81,40,10
+    EDITTEXT        IDC_EDIT_C107,46,80,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_071,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,82,19,10
+    CONTROL         "杀",IDC_C1_RAD_072,"Button",BS_AUTORADIOBUTTON,131,82,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C107,155,80,24,12
+    CONTROL         "斜码数",IDC_CHECK_C108,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,94,40,10
+    EDITTEXT        IDC_EDIT_C108,46,93,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_081,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,95,19,10
+    CONTROL         "杀",IDC_C1_RAD_082,"Button",BS_AUTORADIOBUTTON,131,95,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C108,155,93,24,12
+    CONTROL         "左斜数",IDC_CHECK_C109,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,107,40,10
+    EDITTEXT        IDC_EDIT_C109,46,106,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_091,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,108,19,10
+    CONTROL         "杀",IDC_C1_RAD_092,"Button",BS_AUTORADIOBUTTON,131,108,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C109,155,106,24,12
+    CONTROL         "右斜数",IDC_CHECK_C110,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,120,40,10
+    EDITTEXT        IDC_EDIT_C110,46,119,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_101,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,121,19,10
+    CONTROL         "杀",IDC_C1_RAD_102,"Button",BS_AUTORADIOBUTTON,131,121,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C100,155,119,24,12
+    CONTROL         "连号数",IDC_CHECK_C111,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,133,40,10
+    EDITTEXT        IDC_EDIT_C111,46,132,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_111,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,134,19,10
+    CONTROL         "杀",IDC_C1_RAD_112,"Button",BS_AUTORADIOBUTTON,131,134,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C111,155,132,24,12
+    CONTROL         "平均值",IDC_CHECK_C112,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,146,40,10
+    EDITTEXT        IDC_EDIT_C112,46,145,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_121,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,147,19,10
+    CONTROL         "杀",IDC_C1_RAD_122,"Button",BS_AUTORADIOBUTTON,131,147,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C112,155,145,24,12
+    CONTROL         "跨度",IDC_CHECK_C113,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,159,32,10
+    EDITTEXT        IDC_EDIT_C113,46,158,58,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C1_RAD_131,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,160,19,10
+    CONTROL         "杀",IDC_C1_RAD_132,"Button",BS_AUTORADIOBUTTON,131,160,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C113,155,158,24,12
+    CONTROL         "和值",IDC_CHECK_C114,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,184,32,10
+    CONTROL         "留",IDC_C1_RAD_141,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,186,19,10
+    CONTROL         "杀",IDC_C1_RAD_142,"Button",BS_AUTORADIOBUTTON,131,186,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C114,155,184,24,12
+    EDITTEXT        IDC_EDIT_C114,46,183,58,12,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "和值：输入范围 0-27\n示例:5-7,9,11-13,18",
+                    IDC_STATIC_C1_TIP1,4,208,80,16
+    LTEXT           "(0-3)",IDC_STATIC,83,4,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,17,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,30,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,43,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,56,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,69,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,82,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,95,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,108,20,8
+    LTEXT           "(0-3)",IDC_STATIC,83,121,20,8
+    LTEXT           "(0-2)",IDC_STATIC,83,134,20,8
+    LTEXT           "页内容错",IDC_STATIC,120,210,32,8
+    COMBOBOX        IDC_C1_CMB_ERROR,155,207,24,109,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "和尾",IDC_CHECK_C115,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,171,32,10
+    EDITTEXT        IDC_EDIT_C115,46,170,58,12,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C1_RAD_151,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,107,173,19,10
+    CONTROL         "杀",IDC_C1_RAD_152,"Button",BS_AUTORADIOBUTTON,131,173,
+                    19,10
+    PUSHBUTTON      "参考",IDC_BUTTON_C115,155,171,24,12
+END
+
+IDD_COND2 DIALOG DISCARDABLE  0, 0, 181, 253
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "奇偶形态",IDC_CHECK_C2_01,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,3,48,10
+    CONTROL         "偶偶偶",IDC_CHECK_C2_01_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,19,35,8
+    CONTROL         "偶偶奇",IDC_CHECK_C2_01_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,19,35,8
+    CONTROL         "偶奇偶",IDC_CHECK_C2_01_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,19,35,8
+    CONTROL         "偶奇奇",IDC_CHECK_C2_01_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,19,35,8
+    CONTROL         "奇偶偶",IDC_CHECK_C2_01_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,32,35,8
+    CONTROL         "奇偶奇",IDC_CHECK_C2_01_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,32,35,8
+    CONTROL         "奇奇偶",IDC_CHECK_C2_01_6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,32,35,8
+    CONTROL         "奇奇奇",IDC_CHECK_C2_01_7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,32,35,8
+    GROUPBOX        "",IDC_STATIC,7,12,167,31
+    CONTROL         "大小形态",IDC_CHECK_C2_02,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,48,48,10
+    CONTROL         "小小小",IDC_CHECK_C2_02_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,63,35,8
+    CONTROL         "小小大",IDC_CHECK_C2_02_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,63,35,8
+    CONTROL         "小大小",IDC_CHECK_C2_02_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,63,35,8
+    CONTROL         "小大大",IDC_CHECK_C2_02_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,63,35,8
+    CONTROL         "大小小",IDC_CHECK_C2_02_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,76,35,8
+    CONTROL         "大小大",IDC_CHECK_C2_02_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,76,35,8
+    CONTROL         "大大小",IDC_CHECK_C2_02_6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,76,35,8
+    CONTROL         "大大大",IDC_CHECK_C2_02_7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,76,35,8
+    GROUPBOX        "",IDC_STATIC,8,56,167,31
+    CONTROL         "质合形态",IDC_CHECK_C2_03,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,91,48,10
+    CONTROL         "合合合",IDC_CHECK_C2_03_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,108,35,8
+    CONTROL         "合合质",IDC_CHECK_C2_03_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,108,35,8
+    CONTROL         "合质合",IDC_CHECK_C2_03_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,108,35,8
+    CONTROL         "合质质",IDC_CHECK_C2_03_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,108,35,8
+    CONTROL         "质合合",IDC_CHECK_C2_03_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,120,35,8
+    CONTROL         "质合质",IDC_CHECK_C2_03_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,53,120,35,8
+    CONTROL         "质质合",IDC_CHECK_C2_03_6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,120,35,8
+    CONTROL         "质质质",IDC_CHECK_C2_03_7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,120,35,8
+    GROUPBOX        "",IDC_STATIC,8,100,167,31
+    CONTROL         "012路",IDC_CHECK_C2_04,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,136,36,10
+    CONTROL         "000",IDC_CHECK_C2_04_00,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,152,24,8
+    CONTROL         "001",IDC_CHECK_C2_04_01,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,163,24,8
+    CONTROL         "002",IDC_CHECK_C2_04_02,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,174,24,8
+    CONTROL         "010",IDC_CHECK_C2_04_03,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,185,24,8
+    CONTROL         "011",IDC_CHECK_C2_04_04,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,196,24,8
+    CONTROL         "012",IDC_CHECK_C2_04_05,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,152,24,8
+    GROUPBOX        "",IDC_STATIC,8,144,167,64
+    CONTROL         "020",IDC_CHECK_C2_04_06,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,163,24,8
+    CONTROL         "021",IDC_CHECK_C2_04_07,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,174,24,8
+    CONTROL         "022",IDC_CHECK_C2_04_08,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,185,24,8
+    CONTROL         "100",IDC_CHECK_C2_04_09,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,152,24,8
+    CONTROL         "101",IDC_CHECK_C2_04_10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,163,24,8
+    CONTROL         "102",IDC_CHECK_C2_04_11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,174,24,8
+    CONTROL         "110",IDC_CHECK_C2_04_12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,185,24,8
+    CONTROL         "111",IDC_CHECK_C2_04_13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,196,24,8
+    CONTROL         "112",IDC_CHECK_C2_04_14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,152,24,8
+    CONTROL         "120",IDC_CHECK_C2_04_15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,163,24,8
+    CONTROL         "121",IDC_CHECK_C2_04_16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,174,24,8
+    CONTROL         "122",IDC_CHECK_C2_04_17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,185,24,8
+    CONTROL         "200",IDC_CHECK_C2_04_18,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,152,24,8
+    CONTROL         "201",IDC_CHECK_C2_04_19,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,163,24,8
+    CONTROL         "202",IDC_CHECK_C2_04_20,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,174,24,8
+    CONTROL         "210",IDC_CHECK_C2_04_21,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,185,24,8
+    CONTROL         "211",IDC_CHECK_C2_04_22,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,196,24,8
+    CONTROL         "212",IDC_CHECK_C2_04_23,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,152,24,8
+    CONTROL         "220",IDC_CHECK_C2_04_24,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,163,24,8
+    CONTROL         "221",IDC_CHECK_C2_04_25,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,174,24,8
+    CONTROL         "222",IDC_CHECK_C2_04_26,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,185,24,8
+    PUSHBUTTON      "全清",IDC_BTN_C201,61,1,27,14
+    PUSHBUTTON      "反选",IDC_BTN_R201,91,1,27,14
+    PUSHBUTTON      "全清",IDC_BTN_C202,61,45,27,14
+    PUSHBUTTON      "反选",IDC_BTN_R202,91,45,27,14
+    PUSHBUTTON      "全清",IDC_BTN_C203,61,89,27,14
+    PUSHBUTTON      "反选",IDC_BTN_R203,91,89,27,14
+    PUSHBUTTON      "全清",IDC_BTN_C204,61,133,27,14
+    PUSHBUTTON      "反选",IDC_BTN_R204,91,133,27,14
+    PUSHBUTTON      "参考",IDC_BTN_F201,122,1,27,14
+    PUSHBUTTON      "参考",IDC_BTN_F202,122,45,27,14
+    PUSHBUTTON      "参考",IDC_BTN_F203,122,89,27,14
+    PUSHBUTTON      "参考",IDC_BTN_F204,122,133,27,14
+    LTEXT           "勾选的形态为定条件，未勾选的杀除",IDC_STATIC_C2_TIP,8,
+                    242,167,8
+    LTEXT           "页内容错",IDC_STATIC,119,213,32,8
+    COMBOBOX        IDC_C2_CMB_ERROR,151,210,24,132,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+END
+
+IDD_COND3 DIALOG DISCARDABLE  0, 0, 181, 228
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "百十跨",IDC_C3_CHK_01,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,3,36,10
+    EDITTEXT        IDC_C3_EDIT_01,38,2,67,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C3_RAD_011,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,3,19,10
+    CONTROL         "杀",IDC_C3_RAD_012,"Button",BS_AUTORADIOBUTTON,134,3,19,
+                    10
+    CONTROL         "百个跨",IDC_C3_CHK_02,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,15,36,10
+    EDITTEXT        IDC_C3_EDIT_02,38,14,67,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "留",IDC_C3_RAD_021,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,15,19,10
+    CONTROL         "杀",IDC_C3_RAD_022,"Button",BS_AUTORADIOBUTTON,134,15,
+                    19,10
+    CONTROL         "十个跨",IDC_C3_CHK_03,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,27,36,10
+    EDITTEXT        IDC_C3_EDIT_03,38,26,67,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "留",IDC_C3_RAD_031,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,27,19,10
+    CONTROL         "杀",IDC_C3_RAD_032,"Button",BS_AUTORADIOBUTTON,134,27,
+                    19,10
+    CONTROL         "百十和",IDC_C3_CHK_04,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,39,36,10
+    EDITTEXT        IDC_C3_EDIT_04,38,38,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_041,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,39,19,10
+    CONTROL         "杀",IDC_C3_RAD_042,"Button",BS_AUTORADIOBUTTON,134,39,
+                    19,10
+    CONTROL         "百个和",IDC_C3_CHK_05,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,51,36,10
+    EDITTEXT        IDC_C3_EDIT_05,38,50,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_051,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,51,19,10
+    CONTROL         "杀",IDC_C3_RAD_052,"Button",BS_AUTORADIOBUTTON,134,51,
+                    19,10
+    CONTROL         "十个和",IDC_C3_CHK_06,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,63,36,10
+    EDITTEXT        IDC_C3_EDIT_06,38,62,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_061,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,63,19,10
+    CONTROL         "杀",IDC_C3_RAD_062,"Button",BS_AUTORADIOBUTTON,134,63,
+                    19,10
+    CONTROL         "百十积",IDC_C3_CHK_07,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,75,36,10
+    EDITTEXT        IDC_C3_EDIT_07,38,74,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_071,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,75,19,10
+    CONTROL         "杀",IDC_C3_RAD_072,"Button",BS_AUTORADIOBUTTON,134,75,
+                    19,10
+    CONTROL         "百个积",IDC_C3_CHK_08,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,87,36,10
+    EDITTEXT        IDC_C3_EDIT_08,38,86,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_081,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,87,19,10
+    CONTROL         "杀",IDC_C3_RAD_082,"Button",BS_AUTORADIOBUTTON,134,87,
+                    19,10
+    CONTROL         "十个积",IDC_C3_CHK_09,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,99,36,10
+    EDITTEXT        IDC_C3_EDIT_09,38,98,67,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_091,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,99,19,10
+    CONTROL         "杀",IDC_C3_RAD_092,"Button",BS_AUTORADIOBUTTON,134,99,
+                    19,10
+    CONTROL         "两码跨",IDC_C3_CHK_10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,111,36,10
+    EDITTEXT        IDC_C3_EDIT_10,38,110,35,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_101,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,111,19,10
+    CONTROL         "杀",IDC_C3_RAD_102,"Button",BS_AUTORADIOBUTTON,134,111,
+                    19,10
+    CONTROL         "两码和",IDC_C3_CHK_11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,123,36,10
+    EDITTEXT        IDC_C3_EDIT_11,38,122,35,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_111,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,123,19,10
+    CONTROL         "杀",IDC_C3_RAD_112,"Button",BS_AUTORADIOBUTTON,134,123,
+                    19,10
+    CONTROL         "两码积",IDC_C3_CHK_12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,135,36,10
+    EDITTEXT        IDC_C3_EDIT_12,38,134,35,12,ES_AUTOHSCROLL
+    CONTROL         "留",IDC_C3_RAD_121,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,110,135,19,10
+    CONTROL         "杀",IDC_C3_RAD_122,"Button",BS_AUTORADIOBUTTON,134,135,
+                    19,10
+    CONTROL         "大号",IDC_C3_CHK_14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,183,27,10
+    COMBOBOX        IDC_COMB_C3_01,29,181,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_02,63,181,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "小号",IDC_C3_CHK_15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,183,27,10
+    COMBOBOX        IDC_COMB_C3_03,125,181,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_04,158,181,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "奇号",IDC_C3_CHK_16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,197,27,10
+    COMBOBOX        IDC_COMB_C3_05,29,195,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_06,63,195,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "偶号",IDC_C3_CHK_17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,197,27,10
+    COMBOBOX        IDC_COMB_C3_07,125,195,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_08,158,195,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "质号",IDC_C3_CHK_18,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,210,27,10
+    COMBOBOX        IDC_COMB_C3_09,29,208,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_10,63,208,23,51,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "遗漏",IDC_C3_CHK_19,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,210,27,10
+    COMBOBOX        IDC_COMB_C3_11,125,208,23,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMB_C3_12,158,208,23,112,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "杀历史",IDC_C3_CHK_20,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,167,35,9
+    EDITTEXT        IDC_C3_EDIT_20,132,165,23,12,ES_AUTOHSCROLL
+    LTEXT           "－",IDC_STATIC,55,185,8,8
+    LTEXT           "－",IDC_STATIC,150,184,8,8
+    LTEXT           "－",IDC_STATIC,55,197,8,8
+    LTEXT           "－",IDC_STATIC,150,197,8,8
+    LTEXT           "－",IDC_STATIC,55,209,8,8
+    LTEXT           "－",IDC_STATIC,150,212,8,8
+    LTEXT           "期",IDC_STATIC,157,167,9,8
+    PUSHBUTTON      "参考",IDC_C3_BTN_01,157,1,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_02,157,13,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_03,157,25,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_04,157,37,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_05,157,49,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_06,157,61,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_07,157,73,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_08,157,85,24,12
+    PUSHBUTTON      "参考",IDC_C3_BTN_09,157,97,24,12
+    LTEXT           "号码连续：",IDC_STATIC,1,168,40,8
+    LTEXT           "页内容错",IDC_STATIC,27,153,32,8
+    COMBOBOX        IDC_C3_CMB_ERROR,61,152,24,111,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "重",IDC_CHK_EXCLUDE_SAME,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,159,115,18,8
+    LTEXT           "复一",IDC_STATIC_EXCLUDE_SAME2,161,125,16,8
+    LTEXT           "计次",IDC_STATIC_EXCLUDE_SAME3,161,133,16,8
+    EDITTEXT        IDC_EDIT_CNT_DEC,84,110,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CNT_SUM,84,122,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CNT_MUL,84,134,21,12,ES_AUTOHSCROLL
+    LTEXT           "=",IDC_STATIC,76,112,8,8
+    LTEXT           "=",IDC_STATIC,76,123,8,8
+    LTEXT           "=",IDC_STATIC,76,135,8,8
+END
+
+IDD_COND4 DIALOG DISCARDABLE  0, 0, 181, 253
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "定两码(例:19,23,07)",IDC_CHECK_C4_1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,2,89,10
+    EDITTEXT        IDC_EDIT_C41_01,15,12,132,12,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "杀两码(例:19,23,07)",IDC_CHECK_C4_2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,27,88,10
+    EDITTEXT        IDC_EDIT_C42_01,15,37,164,20,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "垃圾复式",IDC_CHECK_C4_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,60,44,10
+    CONTROL         "3段断路",IDC_CHECK_C4_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,136,40,10
+    CONTROL         "定位胆杀(作6个条件计算容错)",IDC_CHECK_C4_5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,2,190,128,10
+    EDITTEXT        IDC_EDIT_C45_01,23,201,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C45_02,79,201,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C45_03,135,201,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C45_11,23,213,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C45_12,79,213,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C45_13,135,213,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "杀",IDC_STATIC,2,215,8,8
+    CONTROL         "无序",IDC_CHECK_NOORDER2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,26,27,10
+    LTEXT           "定",IDC_STATIC,2,203,8,8
+    CONTROL         "无序",IDC_CHECK_NOORDER1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,1,27,10
+    LTEXT           "百",IDC_STATIC,13,203,8,8
+    LTEXT           "十",IDC_STATIC,70,203,8,8
+    LTEXT           "个",IDC_STATIC,126,203,8,8
+    LTEXT           "百",IDC_STATIC,13,215,8,8
+    LTEXT           "十",IDC_STATIC,70,215,8,8
+    LTEXT           "个",IDC_STATIC,126,215,8,8
+    LTEXT           "①3段断路与垃圾复式区别：它不分百十个位置\n②定位胆杀的百十个是或的关系",
+                    IDC_STATIC_C4_TIP,3,233,173,15
+    LTEXT           "页内容错",IDC_STATIC,149,2,32,8
+    COMBOBOX        IDC_C4_CMB_ERROR,153,11,24,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_C4_ERR3,79,59,19,12,ES_AUTOHSCROLL
+    LTEXT           "本级容错",IDC_STATIC,47,61,32,8,WS_DISABLED
+    EDITTEXT        IDC_C4_ERR4,79,134,19,12,ES_AUTOHSCROLL
+    LTEXT           "本级容错",IDC_STATIC,47,136,32,8,WS_DISABLED
+    CONTROL         "List1",IDC_LIST43,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,71,181,60
+    CONTROL         "List1",IDC_LIST44,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,147,181,37
+    LTEXT           "鼠标悬停表格查看提示",IDC_STATIC,100,136,81,8,
+                    WS_DISABLED
+    LTEXT           "鼠标悬停表格查看提示",IDC_STATIC,100,61,81,8,
+                    WS_DISABLED
+END
+
+IDD_DATA_INPUT DIALOGEX 0, 0, 187, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录入号码"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PERIOD,137,12,39,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUMBER,137,31,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TAIL,159,31,17,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "添  加",IDC_ADD,122,74,50,14
+    PUSHBUTTON      "保  存",IDOK,122,96,50,14
+    PUSHBUTTON      "修  改",IDC_MODIFY,122,121,50,14
+    PUSHBUTTON      "删  除",IDC_DELETE,122,135,50,14
+    PUSHBUTTON      "导入...",IDC_IMPORT,122,157,50,14
+    PUSHBUTTON      "导出...",IDC_EXPORT,122,171,50,14
+    PUSHBUTTON      "关  闭",IDCANCEL,122,194,50,14
+    CONTROL         "List1",IDC_LIST_DATABASE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,
+                    5,6,96,204,WS_EX_STATICEDGE
+    LTEXT           "期号",IDC_STATIC,115,15,17,8
+    LTEXT           "号码",IDC_STATIC,115,35,17,8
+END
+
+IDD_WIN_HISTORY DIALOGEX 0, 0, 62, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "动态列表"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_WIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,1,1,60,276,WS_EX_CLIENTEDGE
+END
+
+IDD_DATA_CHART DIALOG DISCARDABLE  0, 0, 452, 315
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "走势分析  (右键可关闭窗口)"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_CMB_ANALYSE_TYPE,52,17,48,352,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "50期",IDC_RAD_DA1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,214,19,32,10
+    CONTROL         "100期",IDC_RAD_DA2,"Button",BS_AUTORADIOBUTTON,271,19,
+                    36,10
+    CONTROL         "今年",IDC_RAD_DA3,"Button",BS_AUTORADIOBUTTON,328,19,32,
+                    10
+    CONTROL         "全部",IDC_RAD_DA4,"Button",BS_AUTORADIOBUTTON,385,19,32,
+                    10
+    GROUPBOX        " 范围选择",IDC_STATIC,4,5,446,31,WS_GROUP
+    LTEXT           "分析类型",IDC_STATIC,15,20,32,8
+END
+
+IDD_DATA_DISTRIBUTE DIALOGEX 0, 0, 560, 301
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "号码分布  (右键可关闭窗口)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,25,560,276,WS_EX_CLIENTEDGE
+    CONTROL         "50期",IDC_RAD_DD1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,127,8,32,10
+    CONTROL         "100期",IDC_RAD_DD2,"Button",BS_AUTORADIOBUTTON,193,8,36,
+                    10
+    CONTROL         "200期",IDC_RAD_DD3,"Button",BS_AUTORADIOBUTTON,263,8,36,
+                    10
+    CONTROL         "今年",IDC_RAD_DD4,"Button",BS_AUTORADIOBUTTON,333,8,32,
+                    10
+    CONTROL         "全部",IDC_RAD_DD5,"Button",BS_AUTORADIOBUTTON,399,8,32,
+                    10
+END
+
+IDD_DATA_ANALYSE DIALOG DISCARDABLE  0, 0, 335, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据分析  (右键可关闭窗口)"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_STAT,"SysTabControl32",0x0,4,38,323,156
+    CONTROL         "50期",IDC_RAD_WP01,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,16,32,10
+    CONTROL         "100期",IDC_RAD_WP02,"Button",BS_AUTORADIOBUTTON,53,16,
+                    36,10
+    CONTROL         "今年",IDC_RAD_WP03,"Button",BS_AUTORADIOBUTTON,98,16,32,
+                    10
+    CONTROL         "全部",IDC_RAD_WP04,"Button",BS_AUTORADIOBUTTON,138,16,
+                    32,10
+    GROUPBOX        "统计期数",IDC_STATIC,4,2,174,29
+    COMBOBOX        IDC_COM_AHP,257,14,32,115,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    GROUPBOX        "选择推荐码分析条件",IDC_STATIC_SEL_COND,181,2,112,29,
+                    NOT WS_VISIBLE
+    COMBOBOX        IDC_CMB_RECOMMAND,199,14,33,85,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    LTEXT           "按住 CTRL  点期号, 只统计下期出组六\n按住 SHIFT 点期号, 只统计下期出组三",
+                    IDC_STATIC_TIP,185,10,142,16
+END
+
+IDD_DONATE DIALOG DISCARDABLE  0, 0, 222, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "醉排三捐助信息"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关  闭",IDOK,85,136,50,14
+    EDITTEXT        IDC_EDIT_ZFB,62,10,73,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MSN,14,99,104,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_QQ,138,99,69,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "支付宝帐号",IDC_STATIC,14,12,41,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "本软件已不接受捐赠",IDC_STATIC,14,88,73,8
+    LTEXT           "支付宝",IDC_STATIC_ZFB,145,11,61,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_STAT3 DIALOG DISCARDABLE  0, 0, 306, 138
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,1,260,130
+    EDITTEXT        IDC_WIN_STAT_TIP,263,2,34,129,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_STAT1 DIALOGEX 0, 0, 278, 125
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,2,272,118,WS_EX_CLIENTEDGE
+END
+
+IDD_STAT4 DIALOG DISCARDABLE  0, 0, 328, 147
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,0,269,143
+    EDITTEXT        IDC_OTHER_STAT_TIP,271,0,49,143,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_STAT2 DIALOG DISCARDABLE  0, 0, 331, 126
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,1,285,120
+    EDITTEXT        IDC_STAT_STAT_TIP,287,2,39,119,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_COND5 DIALOG DISCARDABLE  0, 0, 181, 227
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "号码范围",IDC_C5_CHK_01,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,3,43,10
+    LTEXT           "页内容错",IDC_STATIC,120,215,32,8
+    COMBOBOX        IDC_C5_CMB_ERROR,152,212,26,201,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_C5_ERR1,77,1,19,12,ES_AUTOHSCROLL
+    LTEXT           "本级容错",IDC_STATIC,45,3,32,8,WS_DISABLED
+    CONTROL         "重号只计一次",IDC_CHK_ONCE_G3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,214,64,10
+    CONTROL         "List2",IDC_LIST51,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,13,18,165,192
+    LTEXT           "鼠标悬停表格查看提示",IDC_STATIC,100,4,81,8,WS_DISABLED
+END
+
+IDD_COND6 DIALOG DISCARDABLE  0, 0, 182, 254
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "开发中…\n\n本页拟用于抽象的公式、算胆法、杀号法等",
+                    IDC_STATIC,6,10,168,229
+END
+
+IDD_STAT5 DIALOG DISCARDABLE  0, 0, 297, 153
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,0,251,149
+    EDITTEXT        IDC_OTHER_STAT_TIP,253,0,38,150,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_INTERSECTION DIALOGEX 0, 0, 403, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "大底交集"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "求 交 集",IDOK,222,9,47,14
+    EDITTEXT        IDC_EDIT_ERR1,286,10,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_NOTHOUSANDS,305,10,10,12
+    EDITTEXT        IDC_EDIT_ERR2,360,10,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_NOTHOUSANDS,378,10,10,12
+    EDITTEXT        IDC_EDIT_INTER_RESULT,223,63,176,230,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL,
+                    WS_EX_ACCEPTFILES | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "保存...",IDC_SAVE_RESULT,314,302,38,14,WS_DISABLED
+    PUSHBUTTON      "关 闭",IDCANCEL,361,302,38,14
+    PUSHBUTTON      "添加文件",IDC_SEL_FILE,6,302,35,14
+    PUSHBUTTON      "移去未选",IDC_DEL_FILE,131,302,35,14
+    PUSHBUTTON      "重排序号",IDC_RESORT,177,302,35,14
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,6,5,206,289,WS_EX_ACCEPTFILES | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "<= 容错 <=",IDC_STATIC,317,12,40,8
+    EDITTEXT        IDC_EDIT_INTER_TIP,223,34,176,19,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | NOT WS_BORDER
+    PUSHBUTTON      "全清",IDC_CLEAR_ALL,71,302,24,14
+    PUSHBUTTON      "反选",IDC_REVERSE_SEL,95,302,24,14
+    PUSHBUTTON      "帮 助",IDC_CLEAR_RESULT,267,302,38,14
+    PUSHBUTTON      "编辑",IDC_EDIT_FILE,223,303,35,14,WS_DISABLED
+END
+
+IDD_AUTO_BASE DIALOGEX 0, 0, 353, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动大底选项"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ERR1,304,119,21,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_NOTHOUSANDS,326,119,9,13
+    EDITTEXT        IDC_EDIT_ERR2,304,136,21,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_NOTHOUSANDS,326,136,9,13
+    DEFPUSHBUTTON   "确  定",IDOK,306,161,42,31
+    PUSHBUTTON      "关  闭",IDCANCEL,306,195,42,14
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,6,5,241,223,WS_EX_ACCEPTFILES | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "点击确定后，生成的大底会自动填入内置大底编辑框中。\n\n各算法正确率统计参见“数据分析”\n\n部分方法跟历史数据相关，请保证历史记录中有完整的开奖数据。\n\n使用自动荐底有风险，作者不承担赔偿责任。",
+                    IDC_STATIC,261,6,80,106
+    LTEXT           "容错下限:",IDC_STATIC,262,122,36,9
+    LTEXT           "容错上限:",IDC_STATIC,262,139,36,9
+    PUSHBUTTON      "<< 全清",IDC_CLEAR_ALL,252,161,42,14
+    PUSHBUTTON      "<< 全选",IDC_SEL_ALL,252,178,42,14
+    PUSHBUTTON      "<< 默认",IDC_DEFAULT_SEL,252,195,42,14
+    PUSHBUTTON      "最近10期杀号效果",IDC_KILL_EFFECT,252,214,96,14
+END
+
+IDD_STAT6 DIALOG DISCARDABLE  0, 0, 297, 162
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | 
+                    WS_TABSTOP,0,0,239,158
+    EDITTEXT        IDC_OTHER_STAT_TIP,242,0,48,157,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,1,2
+ PRODUCTVERSION 1,3,1,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "醉书生\0"
+            VALUE "FileDescription", "体彩排列三/福彩3D过滤软件\0"
+            VALUE "FileVersion", "1, 3, 1, 2\0"
+            VALUE "InternalName", "My3D\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "醉排三\0"
+            VALUE "OriginalFilename", "My3D.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "醉排三\0"
+            VALUE "ProductVersion", "1, 3, 1, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COND3 DLGINIT
+BEGIN
+    IDC_COMB_C3_01, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_01, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_01, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_02, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_02, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_02, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_03, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_03, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_03, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_04, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_04, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_04, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_05, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_05, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_05, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_06, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_06, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_06, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_07, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_07, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_07, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_08, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_08, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_08, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_09, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_09, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_09, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_10, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_10, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_10, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0033, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0034, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0035, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0036, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0037, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0038, 
+    IDC_COMB_C3_11, 0x403, 2, 0
+0x0039, 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMB_C3_11, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMB_C3_11, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0030, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0031, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0032, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0033, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0034, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0035, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0036, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0037, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0038, 
+    IDC_COMB_C3_12, 0x403, 2, 0
+0x0039, 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3136, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3236, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3336, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3536, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3736, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3836, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3936, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3037, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3137, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3237, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3337, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3437, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3537, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3637, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3737, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3837, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3937, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3138, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3238, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3338, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3438, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3538, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3638, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3738, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3838, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3938, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3039, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3139, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3239, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3339, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3439, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3539, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3639, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3739, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3839, "\000" 
+    IDC_COMB_C3_12, 0x403, 3, 0
+0x3939, "\000" 
+    IDC_COMB_C3_12, 0x403, 4, 0
+0x3031, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_My3D_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_DIALOG_NUMBER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DIALOG_BASE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 147
+    END
+
+    IDD_DIALOG_G6, DIALOG
+    BEGIN
+        RIGHTMARGIN, 74
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG_G3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG_G1, DIALOG
+    BEGIN
+        HORZGUIDE, 126
+    END
+
+    IDD_DATA_ANALYSE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 334
+    END
+
+    IDD_DONATE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 221
+    END
+
+    IDD_STAT2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 125
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_ICON MENU DISCARDABLE 
+BEGIN
+    POPUP "醉排三"
+    BEGIN
+        MENUITEM "显示/隐藏 主窗口",            IDC_SHOW_HIDE, INACTIVE
+        MENUITEM "检查更新",                    IDC_CHECK_UPDATE
+        MENUITEM "帮助",                        IDHELP
+        MENUITEM "关于...",                     IDC_BTN_ABOUT
+        MENUITEM "退出",                        IDCANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 My3D(&A)..."
+    IDS_TITLE               "醉排三"
+    IDS_TITLE1              "体彩排列三"
+    IDS_TITLE2              "福彩3D"
+    IDS_VERSION             "1.3.12"
+    IDS_BASE_INI_FILE       "Base.ini"
+    IDS_UPDATE_CFG          "Update.ini"
+    IDS_EXENAME             "My3D.EXE"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\My3D.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
